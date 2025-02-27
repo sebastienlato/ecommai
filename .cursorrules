@@ -41,7 +41,7 @@
 
 ### 3. Core Features - Customer Side [ ]
 
-- [x] Home Layout:
+- [x]Home Layout: 
   - [x] Create `(home)` folder in `app` directory
   - [x] Header with logo, search bar, and navigation
   - [x] Footer with links and social media
