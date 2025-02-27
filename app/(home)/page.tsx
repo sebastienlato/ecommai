@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import type { Product, Category } from "@prisma/client";
 import { BannerCarousel } from "@/app/components/BannerCarousel";
@@ -31,8 +32,9 @@ export default async function Home() {
         <h2 className="mb-4 text-2xl font-bold">Latest Products</h2>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {latestProducts.map((product: ProductWithCategory) => (
-            <div
+            <Link
               key={product.id}
+              href={`/products/${product.id}`}
               className="group rounded-lg border border-gray-200 bg-white"
             >
               <div className="relative aspect-square overflow-hidden bg-gray-50">
@@ -40,7 +42,7 @@ export default async function Home() {
                   src={product.images[0]}
                   alt={product.name}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <div className="p-4">
@@ -63,7 +65,7 @@ export default async function Home() {
                   Add to Cart
                 </Button>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
