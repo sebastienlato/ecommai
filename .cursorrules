@@ -1,0 +1,138 @@
+# Cursor Rules
+
+## Instructions
+
+- Record fixes for mistakes or corrections to avoid repetition in the `Lessons` section.
+- Organize thoughts and plan steps before starting a task in the `Scratchpad` section.
+- Clear old tasks if necessary.
+- Use todo markers for progress tracking:
+  - `[X]` Completed tasks
+  - `[ ]` Pending tasks
+- Update Scratchpad after completing subtasks.
+- Reflect and plan after milestones for better task management.
+- Always refer to Scratchpad before planning the next step.
+
+## Lessons
+
+## Scratchpad
+
+#### 1. Project Setup and Configuration
+
+[X] Initialize Next.js 15 project with TypeScript
+[X] Set up project structure and organization
+[X] Configure ESLint and Prettier
+[X] Install and configure required dependencies
+[ ] Set up PostgreSQL database
+[ ] Configure Prisma ORM
+[ ] Set up environment variables
+
+#### 2. Authentication and Authorization
+
+[ ] Implement NextAuth.js authentication
+[ ] Create user roles (admin, customer)
+[ ] Set up protected routes
+[ ] Implement session management
+[ ] Create auth middleware
+
+#### 3. Database Schema and Models
+
+[ ] Design database schema
+[ ] Create Prisma models for:
+
+- [ ] Users
+- [ ] Products
+- [ ] Categories
+- [ ] Orders
+- [ ] Reviews
+- [ ] Cart
+- [ ] Wishlist
+      [ ] Set up database migrations
+      [ ] Create seed data
+
+#### 4. Admin Dashboard
+
+[ ] Create admin layout with Shadcn
+[ ] Implement admin features:
+
+- [ ] Dashboard overview with Recharts
+- [ ] Product management CRUD
+- [ ] Order management
+- [ ] Customer management
+- [ ] Category management
+- [ ] Analytics and reporting
+- [ ] Sales statistics
+      [ ] Add admin authentication middleware
+
+#### 5. Store Frontend
+
+[ ] Design and implement main layout
+[ ] Create components:
+
+- [ ] Navigation
+- [ ] Product cards
+- [ ] Product grid
+- [ ] Search functionality
+- [ ] Filters
+- [ ] Cart
+- [ ] Checkout process
+      [ ] Implement responsive design
+      [ ] Add loading states and animations
+
+#### 6. Product Management
+
+[ ] Create product upload system with Uploadthing
+[ ] Implement product variants
+[ ] Add product search and filtering
+[ ] Create product categories
+[ ] Implement product reviews and ratings
+
+#### 7. Shopping Features
+
+[ ] Implement shopping cart with Zustand
+[ ] Create wishlist functionality
+[ ] Add product recommendations
+[ ] Implement search with filters
+[ ] Create order tracking system
+
+#### 8. Checkout and Payments
+
+[ ] Set up Stripe integration
+[ ] Implement checkout process
+[ ] Create order confirmation
+[ ] Set up email notifications with Resend
+[ ] Handle payment webhooks
+[ ] Implement order history
+
+#### 9. API Development
+
+[ ] Create API routes with proper validation using Zod
+[ ] Implement error handling
+[ ] Add rate limiting
+[ ] Set up API documentation
+[ ] Implement data caching
+
+#### 10. Testing and Optimization
+
+[ ] Write unit tests
+[ ] Perform integration testing
+[ ] Implement error boundaries
+[ ] Optimize performance
+[ ] Add SEO optimization
+[ ] Implement analytics
+
+#### 11. Deployment and DevOps
+
+[ ] Set up CI/CD pipeline
+[ ] Configure production environment
+[ ] Set up monitoring and logging
+[ ] Implement backup strategy
+[ ] Configure security measures
+
+#### 12. Additional Features
+
+[ ] Add multi-language support
+[ ] Implement dark mode
+[ ] Create mobile responsive design
+[ ] Add PWA support
+[ ] Implement inventory management
+[ ] Create return/refund system
