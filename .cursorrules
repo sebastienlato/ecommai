@@ -43,9 +43,9 @@
 
 - [x]Home Layout: 
   - [x] Create `(home)` folder in `app` directory
-  - [x] Header with logo, search bar, and navigation
-  - [x] Footer with links and social media
-- [ ] Homepage:
+  - Header with logo, search bar, and navigation
+  - Footer with links and social media
+- [x] Homepage:
   - banner carousel
   - latest products
 - [ ] Products Catalog:

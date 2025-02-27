@@ -21,45 +21,45 @@ const links = {
 
 export default function Footer() {
   return (
-    <footer className="border-t">
-      <div className="container flex flex-col gap-8 py-8">
-        <div className="flex flex-col gap-6 md:flex-row md:justify-between">
-          <div className="space-y-4">
-            <h3 className="text-lg font-medium">Shop</h3>
+    <footer className="border-t border-gray-200">
+      <div className="mx-auto flex flex-col gap-6 px-4 py-6">
+        <div className="flex flex-col gap-4 md:flex-row md:justify-between">
+          <div className="space-y-3">
+            <h3 className="text-sm font-medium text-gray-700">Shop</h3>
             <nav className="flex flex-col gap-2">
               {links.shop.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm hover:underline"
+                  className="text-sm text-gray-500 hover:text-gray-700"
                 >
                   {link.label}
                 </Link>
               ))}
             </nav>
           </div>
-          <div className="space-y-4">
-            <h3 className="text-lg font-medium">Account</h3>
+          <div className="space-y-3">
+            <h3 className="text-sm font-medium text-gray-700">Account</h3>
             <nav className="flex flex-col gap-2">
               {links.account.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm hover:underline"
+                  className="text-sm text-gray-500 hover:text-gray-700"
                 >
                   {link.label}
                 </Link>
               ))}
             </nav>
           </div>
-          <div className="space-y-4">
-            <h3 className="text-lg font-medium">Legal</h3>
+          <div className="space-y-3">
+            <h3 className="text-sm font-medium text-gray-700">Legal</h3>
             <nav className="flex flex-col gap-2">
               {links.legal.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm hover:underline"
+                  className="text-sm text-gray-500 hover:text-gray-700"
                 >
                   {link.label}
                 </Link>
@@ -67,19 +67,34 @@ export default function Footer() {
             </nav>
           </div>
         </div>
-        <div className="flex flex-col gap-4 md:flex-row md:justify-between">
-          <p className="text-sm text-muted-foreground">
+        <div className="flex flex-col gap-4 border-t border-gray-200 pt-6 md:flex-row md:items-center md:justify-between">
+          <p className="text-sm text-gray-500">
             © 2024 ECOMMAI. All rights reserved.
           </p>
-          <div className="flex gap-4">
-            <Link href="https://twitter.com" target="_blank" rel="noreferrer">
-              <Twitter className="h-5 w-5" />
+          <div className="flex items-center gap-4">
+            <Link
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-500 hover:text-gray-700"
+            >
+              <Twitter className="h-4 w-4" />
             </Link>
-            <Link href="https://github.com" target="_blank" rel="noreferrer">
-              <Github className="h-5 w-5" />
+            <Link
+              href="https://github.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-500 hover:text-gray-700"
+            >
+              <Github className="h-4 w-4" />
             </Link>
-            <Link href="https://linkedin.com" target="_blank" rel="noreferrer">
-              <Linkedin className="h-5 w-5" />
+            <Link
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-500 hover:text-gray-700"
+            >
+              <Linkedin className="h-4 w-4" />
             </Link>
           </div>
         </div>

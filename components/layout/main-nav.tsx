@@ -1,36 +1,31 @@
 import Link from "next/link";
 
-const routes = [
-  {
-    href: "/products",
-    label: "All Products",
-  },
-  {
-    href: "/categories/t-shirts",
-    label: "T-Shirts",
-  },
-  {
-    href: "/categories/jeans",
-    label: "Jeans",
-  },
-  {
-    href: "/categories/shoes",
-    label: "Shoes",
-  },
+const links = [
+  { href: "/products", label: "All Products" },
+  { href: "/t-shirts", label: "T-Shirts" },
+  { href: "/jeans", label: "Jeans" },
+  { href: "/shoes", label: "Shoes" },
 ];
 
-export function MainNav() {
+interface MainNavProps {
+  className?: string;
+}
+
+export function MainNav({ className }: MainNavProps) {
   return (
-    <nav className="hidden gap-6 md:flex">
-      {routes.map((route) => (
-        <Link
-          key={route.href}
-          href={route.href}
-          className="flex items-center text-sm font-medium transition-colors hover:text-primary"
-        >
-          {route.label}
-        </Link>
-      ))}
+    <nav className={className}>
+      <ul className="flex gap-6">
+        {links.map((link) => (
+          <li key={link.href}>
+            <Link
+              href={link.href}
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 }
